@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 const Home = () => {
      return (
           <>
@@ -82,7 +84,7 @@ const Home = () => {
                                              <li className="social-icons-instagram">
                                                   <a
                                                        data-bs-toggle="tooltip"
-                                                       href="http://www.instagram.com/"
+                                                       href="https://www.instagram.com/codesign_multimedia_institute"
                                                        target="_blank"
                                                        title="Instagram"
                                                   >
@@ -226,10 +228,10 @@ const Home = () => {
                               </div>
                               <div className="modal-body p-4">
                                    <p className="lead text-center">
-                                        We're a digital agency based in USA. We combine our passion for
+                                        We're a IT training providers based in Surat(India). We combine our passion for
                                         design focused in people with advanced development technologies.
-                                        Thousands of clients have procured exceptional results while working
-                                        with our dedicated team.
+                                        Many students have procured exceptional results while getting trained
+                                        by our dedicated team.
                                    </p>
                                    <div className="row">
                                         <div className="col-lg-4">
@@ -240,9 +242,7 @@ const Home = () => {
                                                   </div>
                                                   <h4 className="fw-600">Why Choose Us</h4>
                                                   <p className="text-3">
-                                                       Lorem Ipsum is simply dummy text of the printing and
-                                                       typesetting industry. Lorem Ipsum has been the industry’s
-                                                       standard dummy text.
+                                                       Codesign Multimedia Institute brings you online, self-paced, mentor driven courses that not only helps professionals gain theoretical expertise but also the practical experience in a wide variety of courses including courses on Computer Courses such as IT Course, which is very popular.
                                                   </p>
                                              </div>
                                         </div>
@@ -254,9 +254,7 @@ const Home = () => {
                                                   </div>
                                                   <h4 className="fw-600">Our Mission</h4>
                                                   <p className="text-3">
-                                                       Lorem Ipsum is simply dummy text of the printing and
-                                                       typesetting industry. Lorem Ipsum has been the industry’s
-                                                       standard dummy text.
+                                                       We are committed to create skilled professionals, to fulfill the gap between industry and employee by providing advanced quality training and assessment services in skill and behavioral areas.
                                                   </p>
                                              </div>
                                         </div>
@@ -268,9 +266,7 @@ const Home = () => {
                                                   </div>
                                                   <h4 className="fw-600">Our Vision</h4>
                                                   <p className="text-3">
-                                                       Lorem Ipsum is simply dummy text of the printing and
-                                                       typesetting industry. Lorem Ipsum has been the industry’s
-                                                       standard dummy text.
+                                                       Our Vision is to make professional, who believe in themselves and are equipped with the latest state of the art in their respective fields, who are confident and can compete in the challenging world. We want to become a leading training institute to provide real world hands on training to our students.
                                                   </p>
                                              </div>
                                         </div>
@@ -278,7 +274,7 @@ const Home = () => {
                                    <hr className="my-5" />
                                    {/* Recent Work */}
                                    <h3 className="text-center my-5">
-                                        Some of our most recent projects.
+                                        Courses We Offer
                                    </h3>
                                    <div className="portfolio popup-img-gallery">
                                         <div className="row g-4">
@@ -288,18 +284,18 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src="images/images-intro-bg-2.jpg"
+                                                                 src={require('./Images/js-development1.jpg')}
                                                                  alt=""
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
                                                                  <a
                                                                       className="popup-img stretched-link"
-                                                                      href="images/intro-bg-2.jpg"
+                                                                      href="#"
                                                                  />
                                                                  <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Project Title</h5>
-                                                                      <span className="text-light">Category</span>{" "}
+                                                                      <h5 className="text-white fw-400">Fullstack JS Development</h5>
+                                                                      <span className="text-light">Front-end & Back-end JS Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -311,18 +307,18 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src="images/images-intro-bg-3.jpg"
+                                                                 src={require('./Images/react-js.jpg')}
                                                                  alt=""
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
                                                                  <a
                                                                       className="popup-img stretched-link"
-                                                                      href="images/intro-bg-3.jpg"
+                                                                      href="#"
                                                                  />
                                                                  <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Project Title</h5>
-                                                                      <span className="text-light">Category</span>{" "}
+                                                                      <h5 className="text-white fw-400">React JS</h5>
+                                                                      <span className="text-light">Front-end JS Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -334,18 +330,18 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src="images/images-intro-bg-4.jpg"
+                                                                 src={require('./Images/nodejs.jpeg')}
                                                                  alt=""
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
                                                                  <a
                                                                       className="popup-img stretched-link"
-                                                                      href="images/intro-bg-4.jpg"
+                                                                      href="#"
                                                                  />
                                                                  <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Project Title</h5>
-                                                                      <span className="text-light">Category</span>{" "}
+                                                                      <h5 className="text-white fw-400">Node JS</h5>
+                                                                      <span className="text-light">Back-end JS Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -357,18 +353,18 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src="images/images-intro-bg-5.jpg"
+                                                                 src={require('./Images/php.jpg')}
                                                                  alt=""
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
                                                                  <a
                                                                       className="popup-img stretched-link"
-                                                                      href="images/intro-bg-5.jpg"
+                                                                      href="#"
                                                                  />
                                                                  <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Project Title</h5>
-                                                                      <span className="text-light">Category</span>{" "}
+                                                                      <h5 className="text-white fw-400">PHP Web Development</h5>
+                                                                      <span className="text-light">PHP Front-end & Back-end Web Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -380,7 +376,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src="images/images-intro-bg-6.jpg"
+                                                                 src={require('./Images/python.jpg')}
                                                                  alt=""
                                                             />
                                                             <div className="portfolio-overlay">
@@ -390,8 +386,8 @@ const Home = () => {
                                                                       href="images/intro-bg-6.jpg"
                                                                  />
                                                                  <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Project Title</h5>
-                                                                      <span className="text-light">Category</span>{" "}
+                                                                      <h5 className="text-white fw-400">Python Web Development</h5>
+                                                                      <span className="text-light">Python Front-end & Back-end Web Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -403,18 +399,87 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src="images/images-intro-bg.jpg"
+                                                                 src={require('./Images/android.jpg')}
                                                                  alt=""
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
                                                                  <a
                                                                       className="popup-img stretched-link"
-                                                                      href="images/intro-bg.jpg"
+                                                                      href="#"
                                                                  />
                                                                  <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Project Title</h5>
-                                                                      <span className="text-light">Category</span>{" "}
+                                                                      <h5 className="text-white fw-400">Android</h5>
+                                                                      <span className="text-light">Android Mobile App Development</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             {/* <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/android.jpg')}
+                                                                 alt=""
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <a
+                                                                      className="popup-img stretched-link"
+                                                                      href="#"
+                                                                 />
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Android</h5>
+                                                                      <span className="text-light">Android Mobile App Development</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div> */}
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/flutter.jpg')}
+                                                                 alt=""
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <a
+                                                                      className="popup-img stretched-link"
+                                                                      href="#"
+                                                                 />
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Flutter</h5>
+                                                                      <span className="text-light">Cross Platform Development</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/native.png')}
+                                                                 alt=""
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <a
+                                                                      className="popup-img stretched-link"
+                                                                      href="#"
+                                                                 />
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">React Native</h5>
+                                                                      <span className="text-light">Hybrid App Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -427,6 +492,8 @@ const Home = () => {
                     </div>
                </div>
                {/* About Popup End */}
+
+               <Footer />
 
 
 
