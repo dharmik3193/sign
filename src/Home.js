@@ -1,4 +1,5 @@
 import Footer from "./Footer";
+import Header from "./Header";
 
 const Home = () => {
      return (
@@ -18,103 +19,25 @@ const Home = () => {
 =============================== */}
                <div id="main-wrapper">
                     {/* Header */}
-                    <header id="header">
-                         {/* Navbar */}
-                         <nav className="primary-menu navbar navbar-expand-md bg-transparent border-bottom-0">
-                              <div className="container position-relative">
-                                   <div className="col-auto col-lg-2">
-                                        {/* Logo */}
-                                        <a className="logo" href="index.html" title="Codesign">
-                                             {" "}
-                                             <img src="images/C-odesign.png" alt="Codesign" />{" "}
-                                        </a>
-                                        {/* Logo End */}
-                                   </div>
-                                   <div className="col navbar-accordion px-0">
-                                        <button
-                                             className="navbar-toggler ms-auto"
-                                             type="button"
-                                             data-bs-toggle="collapse"
-                                             data-bs-target="#header-nav"
-                                        >
-                                             <span />
-                                             <span />
-                                             <span />
-                                        </button>
-                                        <div
-                                             id="header-nav"
-                                             className="collapse navbar-collapse justify-content-end"
-                                        >
-                                             <ul className="navbar-nav">
-                                                  <li className="nav-item">
-                                                       <a
-                                                            className="nav-link"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#about"
-                                                            href="#"
-                                                       >
-                                                            About Us
-                                                       </a>
-                                                  </li>
-                                             </ul>
-                                        </div>
-                                   </div>
-                                   <div className="col-auto d-flex justify-content-end">
-                                        <ul className="social-icons">
-                                             <li className="social-icons-twitter">
-                                                  <a
-                                                       data-bs-toggle="tooltip"
-                                                       href="http://www.twitter.com/"
-                                                       target="_blank"
-                                                       title="Twitter"
-                                                  >
-                                                       <i className="fab fa-twitter" />
-                                                  </a>
-                                             </li>
-                                             <li className="social-icons-facebook">
-                                                  <a
-                                                       data-bs-toggle="tooltip"
-                                                       href="http://www.facebook.com/"
-                                                       target="_blank"
-                                                       title="Facebook"
-                                                  >
-                                                       <i className="fab fa-facebook" />
-                                                  </a>
-                                             </li>
-                                             <li className="social-icons-instagram">
-                                                  <a
-                                                       data-bs-toggle="tooltip"
-                                                       href="https://www.instagram.com/codesign_multimedia_institute"
-                                                       target="_blank"
-                                                       title="Instagram"
-                                                  >
-                                                       <i className="fab fa-instagram" />
-                                                  </a>
-                                             </li>
-                                        </ul>
-                                   </div>
-                              </div>
-                         </nav>
-                         {/* Navbar End */}
-                    </header>
+                    <Header/>
                     {/* Header End */}
                     <div className="container py-4 py-lg-0">
-                         <div className="row min-vh-100">
+                         <div className="row">
                               {/* Coming Soon Information
     ============================== */}
-                              <div className="col-lg-8 align-items-center d-flex flex-column py-5">
-                                   <div className="row py-5 my-auto text-center text-lg-start">
+                              <div className="col-lg-8 align-items-center d-flex flex-column">
+                                   <div className="row py-5 text-center text-lg-start">
                                         <div className="col-12 mx-auto">
-                                             <h1 className="text-9 text-white bg-danger d-inline-block fw-700 rounded px-3 py-2 mb-4">
-                                                  Coming Soon!
+                                             <h1 className="text-9 text-white bg-color d-inline-block fw-700 rounded px-3 py-2 mb-4">
+                                                  Under Maintenance!
                                              </h1>
                                              <h2 className="text-15 fw-600 mb-4">
-                                                  Our new website is on its way.
+                                                  Our website is under maintenanace.
                                              </h2>
                                         </div>
                                         <div className="col-md-8 col-lg-9 col-xl-8 mx-auto me-lg-auto ms-lg-0">
                                              <p className="text-5 text-muted mb-3">
-                                                  Get notified when we launch.
+                                                  Get notified when we back.
                                              </p>
                                              {/* Subscribe Form */}
                                              <div className="subscribe-form">
@@ -150,12 +73,12 @@ const Home = () => {
                               {/* Coming Soon Information End */}
                               {/* Contact Us
     ========================= */}
-                              <div className="col-lg-4 my-auto py-lg-5">
+                              <div className="col-lg-4 py-lg-5">
                                    <div className="row bg-light rounded shadow-md border text-center mx-0 py-4 mb-4 mb-lg-0">
                                         <div className="col-11 mx-auto">
                                              <h3 className="fw-600 mb-3 mt-3">Contact Us</h3>
                                              <p className="text-black-50 mb-4">
-                                                  For Customer Support, Send us a note.
+                                                  For Student Support, Send us a note.
                                              </p>
                                              {/* Contact Form */}
                                              <form id="contact-form">

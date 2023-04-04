@@ -1,8 +1,16 @@
 .logo img {
-  width: 250px;
+  width: 230px;
 }
 
 .portfolio-img {
   /* width: 50%; */
   margin: auto;
+}
+
+a :hover {
+    color: #fff;
+}
+
+.bg-color{
+  background-color: #0063b6;
 }

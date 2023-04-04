@@ -28,7 +28,7 @@ ul {
 }
 
 .footer {
-  background-color: #025ee5;
+  background-color: #182F45;
   color: #fff;
 }
 .footer-wave-svg {
@@ -260,6 +260,10 @@ ul {
     padding: 40px 15px 1050px;
     position: relative;
   }
+
+  .logo img {
+    width: 200px;
+  }
 }
 @media (min-width: 480px) and (max-width: 599px) {
   /* smartphones, Android phones, landscape iPhone */
@@ -283,12 +287,16 @@ ul {
 }
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  .logo img {
+    width: 250px;
+  }
 }
 
 @media (min-width: 760px) {
