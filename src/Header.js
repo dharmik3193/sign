@@ -6,7 +6,7 @@ const Header = () => {
                     <div className="container position-relative row">
                         <div className="col-6">
                             {/* Logo */}
-                            <a className="logo" href="index.html" title="Codesign">
+                            <a className="logo" href="/" title="Codesign">
                                 {" "}
                                 <img src="images/codesignlogodark.png" alt="Codesign" />{" "}
                             </a>

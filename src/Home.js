@@ -1,30 +1,56 @@
+import { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import axios from "axios";
 
 const Home = () => {
+
+     const [email, setEmail] = useState('')
+     const [name, setName] = useState('');
+     const [addcourse, setAddcourse] = useState('');
+     const subscribe = (e) => {
+          e.preventDefault()
+          axios.post('https://attractive-gold-wetsuit.cyclic.app/add_newsletter', {
+               email: email
+          })
+               .then(function (res) {
+                    console.log(res);
+               })
+               .catch(function (error) {
+                    console.log(error);
+               });
+     }
+
+     const add_inquiry = (e) => {
+          e.preventDefault()
+          axios.post('https://attractive-gold-wetsuit.cyclic.app/add_inquiry', {
+               name: name,
+               email: email,
+               course: addcourse
+          })
+               .then(function (res) {
+                    console.log(res);
+                    setName('')
+                    setEmail('');
+                    setAddcourse('')
+                    alert("Request submitted successfully. Thanks!!")
+               })
+               .catch(function (error) {
+                    console.log(error);
+               });
+     }
+
      return (
           <>
 
-               {/* Preloader */}
-               {/* <div className="preloader">
-                         <div className="lds-ellipsis">
-                              <div />
-                              <div />
-                              <div />
-                              <div />
-                         </div>
-                    </div> */}
-               {/* Preloader End */}
-               {/* Document Wrapper
-=============================== */}
+               {/* ===========================================Document Wrapper=============================== */}
                <div id="main-wrapper">
                     {/* Header */}
-                    <Header/>
+                    <Header />
                     {/* Header End */}
                     <div className="container py-4 py-lg-0">
                          <div className="row">
-                              {/* Coming Soon Information
-    ============================== */}
+                              {/* =====================================Coming Soon Information============================== */}
                               <div className="col-lg-8 align-items-center d-flex flex-column">
                                    <div className="row py-5 text-center text-lg-start">
                                         <div className="col-12 mx-auto">
@@ -48,14 +74,15 @@ const Home = () => {
                                                                  id="subscribe-form-email"
                                                                  name="subscribe-form-email"
                                                                  className="form-control border-2 required"
-                                                                 required
+                                                                 required={true}
                                                                  placeholder="Enter Your Email Here.."
+                                                                 onChange={(e) => { setEmail(e.target.value) }}
                                                             />
                                                             <button
                                                                  id="subscribe-form-submit"
                                                                  name="subscribe-form-submit"
                                                                  className="btn btn-primary px-4 shadow-none"
-                                                                 type="submit"
+                                                                 onClick={subscribe}
                                                             >
                                                                  <span className="d-none d-sm-block">Notify Me</span>
                                                                  <span className="text-4 d-block d-sm-none">
@@ -71,8 +98,7 @@ const Home = () => {
                                    </div>
                               </div>
                               {/* Coming Soon Information End */}
-                              {/* Contact Us
-    ========================= */}
+                              {/* ========================================Contact Us========================= */}
                               <div className="col-lg-4 py-lg-5">
                                    <div className="row bg-light rounded shadow-md border text-center mx-0 py-4 mb-4 mb-lg-0">
                                         <div className="col-11 mx-auto">
@@ -90,6 +116,7 @@ const Home = () => {
                                                             className="form-control border-2"
                                                             placeholder="Enter Your Name"
                                                             required
+                                                            onChange={(e) => { setName(e.target.value) }}
                                                        />
                                                   </div>
                                                   <div className="mb-3">
@@ -100,6 +127,7 @@ const Home = () => {
                                                             className="form-control border-2"
                                                             placeholder="Enter Your Email"
                                                             required
+                                                            onChange={(e) => { setEmail(e.target.value) }}
                                                        />
                                                   </div>
                                                   <div className="mb-3">
@@ -111,13 +139,14 @@ const Home = () => {
                                                             placeholder="Enter Your Query"
                                                             required
                                                             defaultValue={""}
+                                                            onChange={(e) => { setAddcourse(e.target.value) }}
                                                        />
                                                   </div>
                                                   <div className="d-grid mt-4">
                                                        <button
                                                             id="submit-btn"
                                                             className="btn btn-primary"
-                                                            type="submit"
+                                                            onClick={add_inquiry}
                                                        >
                                                             Send Message
                                                        </button>
@@ -132,8 +161,7 @@ const Home = () => {
                     </div>
                </div>
                {/* Document Wrapper End */}
-               {/* About Popup
-================================== */}
+               {/* ======================================About Popup================================== */}
                <div id="about" className="modal fade" role="dialog" aria-hidden="true">
                     <div
                          className="modal-dialog modal-xl modal-dialog-centered"
@@ -207,15 +235,30 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/js-development1.jpg')}
-                                                                 alt=""
+                                                                 src={require('./Images/apex.jpg')}
+                                                                 alt="Oracle Apex Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Oracle Application Express(APEX)</h5>
+                                                                      <span className="text-light">Web Based ERP software development</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/js-development1.jpg')}
+                                                                 alt="MERN Stack Development Training"
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">Fullstack JS Development</h5>
                                                                       <span className="text-light">Front-end & Back-end JS Development</span>{" "}
@@ -231,14 +274,10 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/react-js.jpg')}
-                                                                 alt=""
+                                                                 alt="React JS Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">React JS</h5>
                                                                       <span className="text-light">Front-end JS Development</span>{" "}
@@ -254,14 +293,10 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/nodejs.jpeg')}
-                                                                 alt=""
+                                                                 alt="Node JS Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">Node JS</h5>
                                                                       <span className="text-light">Back-end JS Development</span>{" "}
@@ -277,14 +312,10 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/php.jpg')}
-                                                                 alt=""
+                                                                 alt="PHP Web Development Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">PHP Web Development</h5>
                                                                       <span className="text-light">PHP Front-end & Back-end Web Development</span>{" "}
@@ -300,14 +331,10 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/python.jpg')}
-                                                                 alt=""
+                                                                 alt="Python Web Development Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="images/intro-bg-6.jpg"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">Python Web Development</h5>
                                                                       <span className="text-light">Python Front-end & Back-end Web Development</span>{" "}
@@ -323,14 +350,10 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/android.jpg')}
-                                                                 alt=""
+                                                                 alt="Android App development Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">Android</h5>
                                                                       <span className="text-light">Android Mobile App Development</span>{" "}
@@ -339,29 +362,6 @@ const Home = () => {
                                                        </div>
                                                   </div>
                                              </div>
-                                             {/* <div className="col-sm-6 col-lg-4">
-                                                  <div className="portfolio-box rounded">
-                                                       <div className="portfolio-img rounded">
-                                                            {" "}
-                                                            <img
-                                                                 className="img-fluid d-block"
-                                                                 src={require('./Images/android.jpg')}
-                                                                 alt=""
-                                                            />
-                                                            <div className="portfolio-overlay">
-                                                                 {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
-                                                                 <div className="portfolio-overlay-details">
-                                                                      <h5 className="text-white fw-400">Android</h5>
-                                                                      <span className="text-light">Android Mobile App Development</span>{" "}
-                                                                 </div>
-                                                            </div>
-                                                       </div>
-                                                  </div>
-                                             </div> */}
                                              <div className="col-sm-6 col-lg-4">
                                                   <div className="portfolio-box rounded">
                                                        <div className="portfolio-img rounded">
@@ -369,14 +369,10 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/flutter.jpg')}
-                                                                 alt=""
+                                                                 alt="Flutter App Development In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">Flutter</h5>
                                                                       <span className="text-light">Cross Platform Development</span>{" "}
@@ -392,17 +388,111 @@ const Home = () => {
                                                             <img
                                                                  className="img-fluid d-block"
                                                                  src={require('./Images/native.png')}
-                                                                 alt=""
+                                                                 alt="React Native Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
                                                                  {" "}
-                                                                 <a
-                                                                      className="popup-img stretched-link"
-                                                                      href="#"
-                                                                 />
                                                                  <div className="portfolio-overlay-details">
                                                                       <h5 className="text-white fw-400">React Native</h5>
                                                                       <span className="text-light">Hybrid App Development</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/uiux.jpg')}
+                                                                 alt="Ui / Ux Design Training In Surat"
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Ui / Ux Design</h5>
+                                                                      <span className="text-light">Designing</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/webdesign.jpg')}
+                                                                 alt="Web Design Training In Surat"
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Web Design</h5>
+                                                                      <span className="text-light">Website Designing</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/graphics.jpg')}
+                                                                 alt="Graphics Design Training In Surat"
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Graphics Design</h5>
+                                                                      <span className="text-light">Designing</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/digital.png')}
+                                                                 alt="Digital Marketing Training In Surat"
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Digital Marketing</h5>
+                                                                      <span className="text-light">Business Development</span>{" "}
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                             <div className="col-sm-6 col-lg-4">
+                                                  <div className="portfolio-box rounded">
+                                                       <div className="portfolio-img rounded">
+                                                            {" "}
+                                                            <img
+                                                                 className="img-fluid d-block"
+                                                                 src={require('./Images/smm.png')}
+                                                                 alt="Social Media Marketing Training In Surat"
+                                                            />
+                                                            <div className="portfolio-overlay">
+                                                                 {" "}
+                                                                 <div className="portfolio-overlay-details">
+                                                                      <h5 className="text-white fw-400">Social Media Marketing</h5>
+                                                                      <span className="text-light">Business Development</span>{" "}
                                                                  </div>
                                                             </div>
                                                        </div>

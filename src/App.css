@@ -11,6 +11,10 @@ a :hover {
     color: #fff;
 }
 
+a:active{
+  color: #fff;
+}
+
 .bg-color{
   background-color: #0063b6;
 }
