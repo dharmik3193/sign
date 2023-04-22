@@ -8,7 +8,7 @@ const Header = () => {
                             {/* Logo */}
                             <a className="logo" href="/" title="Codesign">
                                 {" "}
-                                <img src="images/codesignlogodark.png" alt="Codesign" />{" "}
+                                <img src="images/codesignlogodark.webp" alt="Codesign" />{" "}
                             </a>
                             {/* Logo End */}
                         </div>
@@ -28,7 +28,7 @@ const Header = () => {
                                 className="collapse navbar-collapse justify-content-end"
                             >
                                 <ul className="navbar-nav">
-                                    <li className="nav-item">
+                                    <li className="nav-item bg-color">
                                         <a
                                             className="nav-link"
                                             data-bs-toggle="modal"

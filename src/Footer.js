@@ -12,7 +12,7 @@ const Footer = () => {
                                    <div>
                                         <a className="logo" href="/" title="Codesign Multimedia Institute">
                                              {" "}
-                                             <img src="images/codesignlogowhite.png" alt="Codesign Multimedia Institute" />{" "}
+                                             <img src="images/Codesignlogowhite.webp" alt="Codesign Multimedia Institute" />{" "}
                                         </a>
                                    </div>
                                    <div>

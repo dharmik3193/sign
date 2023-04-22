@@ -8,13 +8,29 @@
 }
 
 a :hover {
-    color: #fff;
-}
-
-a:active{
   color: #fff;
 }
 
-.bg-color{
+a:active {
+  color: #fff;
+}
+
+.bg-color {
   background-color: #0063b6;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.primary-menu ul.navbar-nav>li>a:not(.btn) {
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-expand-md ul.navbar-nav>li>a:not(.btn) {
+      padding: 8px 10px;
+  }
 }

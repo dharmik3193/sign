@@ -235,7 +235,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/apex.jpg')}
+                                                                 src={require('./Images/apex.webp')}
                                                                  alt="Oracle Apex Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -254,7 +254,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/js-development1.jpg')}
+                                                                 src={require('./Images/js-development1.webp')}
                                                                  alt="MERN Stack Development Training"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -273,7 +273,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/react-js.jpg')}
+                                                                 src={require('./Images/react-js.webp')}
                                                                  alt="React JS Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -292,7 +292,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/nodejs.jpeg')}
+                                                                 src={require('./Images/nodejs.webp')}
                                                                  alt="Node JS Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -311,7 +311,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/php.jpg')}
+                                                                 src={require('./Images/php.webp')}
                                                                  alt="PHP Web Development Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -330,7 +330,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/python.jpg')}
+                                                                 src={require('./Images/python.webp')}
                                                                  alt="Python Web Development Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -349,7 +349,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/android.jpg')}
+                                                                 src={require('./Images/android.webp')}
                                                                  alt="Android App development Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -368,7 +368,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/flutter.jpg')}
+                                                                 src={require('./Images/flutter.webp')}
                                                                  alt="Flutter App Development In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -387,7 +387,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/native.png')}
+                                                                 src={require('./Images/native.webp')}
                                                                  alt="React Native Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -406,7 +406,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/uiux.jpg')}
+                                                                 src={require('./Images/uiux.webp')}
                                                                  alt="Ui / Ux Design Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -425,7 +425,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/webdesign.jpg')}
+                                                                 src={require('./Images/webdesign.webp')}
                                                                  alt="Web Design Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -445,7 +445,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/graphics.jpg')}
+                                                                 src={require('./Images/graphics.webp')}
                                                                  alt="Graphics Design Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -465,7 +465,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/digital.png')}
+                                                                 src={require('./Images/digital.webp')}
                                                                  alt="Digital Marketing Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
@@ -485,7 +485,7 @@ const Home = () => {
                                                             {" "}
                                                             <img
                                                                  className="img-fluid d-block"
-                                                                 src={require('./Images/smm.png')}
+                                                                 src={require('./Images/smm.webp')}
                                                                  alt="Social Media Marketing Training In Surat"
                                                             />
                                                             <div className="portfolio-overlay">
